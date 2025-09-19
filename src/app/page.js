@@ -31,18 +31,21 @@ const portfolioData = [
     title: "Matheus Costa - Meu Portfólio Profissional",
     text: "Desenvolvido com Next.js e Tailwind CSS para máxima performance e design exclusivo.",
     altText: "Imagem do meu site",
+    link: "https://ed-matheus-portfolio.vercel.app/"
   },
   {
     imageUrl: "/img/green-gold.png",
     title: "Loja Virtual Green Gold",
     text: "E-commerce completo com WooCommerce. Colaboração com Pixel12Digital.",
     altText: "Imagem da loja virtual Green Gold",
+    link: "https://greengoldjoias.com.br/"
   },
   {
     imageUrl: "/img/marmoraria-brilhante-print.png",
     title: "Landing Page - Marmoraria Brilhante",
     text: "Página de vendas focada em resultados, com design persuasivo para captação de leads.",
     altText: "Imagem da landing page Marmoraria Brilhante",
+    link: "http://marmorariabrilhante.com.br/"
   },
 ];
 
