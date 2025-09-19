@@ -1,10 +1,10 @@
 # Landing Page de Prospecção - Desenvolvedor Web Freelancer
 
-![Prévia da Landing Page](URL_DA_SUA_IMAGEM_AQUI) ## 📝 Descrição
+![Prévia da Landing Page]("/img/landing-page.png") ## 📝 Descrição
 
 Esta é a minha landing page profissional, desenvolvida para apresentar meus serviços de criação de sites e captar clientes através de tráfego orgânico e pago. O projeto foi construído com foco em performance, design moderno e uma experiência de usuário fluida para maximizar as taxas de conversão.
 
-**🔗 Link para o site:** [**seusite.com.br**](https://seusite.com.br) ---
+**🔗 Link para o site:** [**seu-impulso-digital**](https://seu-impulso-digital.vercel.app/) ---
 
 ## ✨ Funcionalidades Principais
 
@@ -23,35 +23,6 @@ Esta é a minha landing page profissional, desenvolvida para apresentar meus ser
 -   **[Tailwind CSS](https://tailwindcss.com/)**: Framework CSS para estilização rápida e customizável.
 -   **[Framer Motion](https://www.framer.com/motion/)**: Biblioteca de animação para React.
 -   **[React Icons](https://react-icons.github.io/react-icons/)**: Pacote de ícones.
-
----
-
-## 🚀 Como Executar o Projeto Localmente
-
-Siga os passos abaixo para rodar o projeto na sua máquina.
-
-1.  **Clone o repositório:**
-    ```bash
-    git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
-    ```
-
-2.  **Navegue até o diretório do projeto:**
-    ```bash
-    cd seu-repositorio
-    ```
-
-3.  **Instale as dependências:**
-    ```bash
-    npm install
-    # ou yarn install / pnpm install
-    ```
-
-4.  **Inicie o servidor de desenvolvimento:**
-    ```bash
-    npm run dev
-    ```
-
-5.  Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
 
 ---
 
