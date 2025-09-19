@@ -3,6 +3,7 @@ import './globals.css';
 
 // Components
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 // Fonte para os títulos
 const montserrat = Montserrat({
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
       <body className={`${montserrat.variable} ${poppins.variable} antialiased`}>
         <Header/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

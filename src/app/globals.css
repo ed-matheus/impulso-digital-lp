@@ -1,10 +1,5 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme {
   --color-dark: #1a1a1f;
   --color-blue: #0a1045;
@@ -24,4 +19,8 @@ body {
 
 p {
   font-family: var(--font-poppins)
+}
+
+a.cta {
+  background-color: var(--color-cyan-h) !important;
 }

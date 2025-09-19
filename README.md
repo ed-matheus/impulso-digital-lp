@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Landing Page de Prospecção - Desenvolvedor Web Freelancer
 
-## Getting Started
+![Prévia da Landing Page](URL_DA_SUA_IMAGEM_AQUI) ## 📝 Descrição
 
-First, run the development server:
+Esta é a minha landing page profissional, desenvolvida para apresentar meus serviços de criação de sites e captar clientes através de tráfego orgânico e pago. O projeto foi construído com foco em performance, design moderno e uma experiência de usuário fluida para maximizar as taxas de conversão.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**🔗 Link para o site:** [**seusite.com.br**](https://seusite.com.br) ---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Funcionalidades Principais
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+-   **Design Totalmente Responsivo**: Experiência de visualização perfeita em desktops, tablets e smartphones.
+-   **Animações Modernas**: Utilização da biblioteca `Framer Motion` para animações sutis que melhoram a interação do usuário.
+-   **Performance Otimizada**: Construído com Next.js para um carregamento rápido e excelente SEO (Server-Side Rendering).
+-   **Portfólio Dinâmico**: Seção para exibir projetos anteriores de forma clara e atrativa.
+-   **Call-to-Action (CTA) Direto**: Botões que levam o potencial cliente diretamente para o WhatsApp, facilitando o primeiro contato.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠️ Tecnologias Utilizadas
 
-To learn more about Next.js, take a look at the following resources:
+-   **[Next.js](https://nextjs.org/)**: Framework React para produção.
+-   **[React](https://react.dev/)**: Biblioteca para construir interfaces de usuário.
+-   **[Tailwind CSS](https://tailwindcss.com/)**: Framework CSS para estilização rápida e customizável.
+-   **[Framer Motion](https://www.framer.com/motion/)**: Biblioteca de animação para React.
+-   **[React Icons](https://react-icons.github.io/react-icons/)**: Pacote de ícones.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Como Executar o Projeto Localmente
 
-## Deploy on Vercel
+Siga os passos abaixo para rodar o projeto na sua máquina.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2.  **Navegue até o diretório do projeto:**
+    ```bash
+    cd seu-repositorio
+    ```
+
+3.  **Instale as dependências:**
+    ```bash
+    npm install
+    # ou yarn install / pnpm install
+    ```
+
+4.  **Inicie o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
+
+5.  Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
+
+---
+
+## 📧 Contato
+
+**Matheus Costa**
+
+-   **LinkedIn:** [Edson Matheus](https://www.linkedin.com/in/edson-matheus-b5a0171ba/)
+-   **WhatsApp:** [+55 (11) 94383-4648](https://wa.me/5511943834648)
