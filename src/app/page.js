@@ -7,49 +7,25 @@ import { RxPencil2, RxLightningBolt, RxMagnifyingGlass } from "react-icons/rx";
 
 // Dados dos Serviços
 const servicesData = [
-  {
-    title: "Design Moderno",
-    text: "Desenvolvo sites com visual atraente e responsivo para todos os dispositivos.",
-    icon: <RxPencil2 />,
-  },
-  {
-    title: "Performance",
-    text: "Sites otimizados para carregamento rápido, garantindo a melhor experiência ao usuário.",
-    icon: <RxLightningBolt />,
-  },
-  {
-    title: "SEO-Ready",
-    text: "Sua empresa será facilmente encontrada por novos clientes através de estratégias de SEO.",
-    icon: <RxMagnifyingGlass />,
-  },
+  // ... (seus dados de serviço aqui)
 ];
 
 // Dados do Portfólio
 const portfolioData = [
-  {
-    imageUrl: "/img/meu-site.png",
-    title: "Matheus Costa - Meu Portfólio Profissional",
-    text: "Desenvolvido com Next.js e Tailwind CSS para máxima performance e design exclusivo.",
-    altText: "Imagem do meu site",
-    link: "https://ed-matheus-portfolio.vercel.app/"
-  },
-  {
-    imageUrl: "/img/green-gold.png",
-    title: "Loja Virtual Green Gold",
-    text: "E-commerce completo com WooCommerce. Colaboração com Pixel12Digital.",
-    altText: "Imagem da loja virtual Green Gold",
-    link: "https://greengoldjoias.com.br/"
-  },
-  {
-    imageUrl: "/img/marmoraria-brilhante-print.png",
-    title: "Landing Page - Marmoraria Brilhante",
-    text: "Página de vendas focada em resultados, com design persuasivo para captação de leads.",
-    altText: "Imagem da landing page Marmoraria Brilhante",
-    link: "http://marmorariabrilhante.com.br/"
-  },
+  // ... (seus dados de portfólio aqui)
 ];
 
 export default function Page() {
+  // --- 1. FUNÇÃO DE CONVERSÃO ---
+  // Esta função será chamada quando um botão de contato for clicado.
+  const handleConversion = () => {
+    if (typeof window.gtag === "function") {
+      window.gtag("event", "conversion", {
+        send_to: "AW-17583189019/IJE5CKiziZ4bEJVYqMBB", // ID do seu evento de clique
+      });
+    }
+  };
+
   return (
     <main className="min-h-screen bg-dark text-light">
       {/* Hero Section */}
@@ -83,6 +59,7 @@ export default function Page() {
           href="https://wa.me/5511943834648"
           target="_blank"
           rel="noopener noreferrer"
+          onClick={handleConversion} // --- 2. ADICIONADO O ONCLICK ---
           className="cta mt-6 rounded-full bg-cyan-h px-8 py-3 text-base font-semibold text-dark shadow-lg shadow-cyan-h/50 transition-transform duration-200 hover:scale-105 sm:px-10 sm:py-4 sm:text-lg"
         >
           Peça um Orçamento Grátis
@@ -94,73 +71,12 @@ export default function Page() {
         id="servicos"
         className="w-full bg-light px-6 py-16 text-dark sm:px-8 md:py-24"
       >
-        <div className="mx-auto max-w-6xl">
-          <motion.h2
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center text-2xl font-bold md:text-4xl"
-          >
-            O Que Você Ganha Com um Site Profissional?
-          </motion.h2>
-
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="mb-12 mt-4 text-center font-medium md:mb-16 md:text-xl"
-          >
-            Mais que um site, uma ferramenta de crescimento para seu negócio.
-          </motion.p>
-
-          <div className="grid grid-cols-1 justify-items-center gap-10 md:grid-cols-2 lg:grid-cols-3">
-            {servicesData.map((item, i) => (
-              <motion.div
-                // biome-ignore lint/suspicious/noArrayIndexKey: ignore
-                key={i}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: i * 0.2 }}
-                viewport={{ once: true }}
-                className="w-full max-w-sm"
-              >
-                <CardComponent {...item} />
-              </motion.div>
-            ))}
-          </div>
-        </div>
+        {/* ... (código da seção de serviços inalterado) ... */}
       </section>
 
       {/* Seção de Portfólio */}
       <section id="portfolio" className="w-full px-6 py-16 sm:px-8 md:py-24">
-        <div className="mx-auto max-w-6xl">
-          <motion.h2
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="mb-12 text-center text-2xl font-bold md:mb-16 md:text-4xl"
-          >
-            Meus Trabalhos
-          </motion.h2>
-
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
-            {portfolioData.map((proj, i) => (
-              <motion.div
-                // biome-ignore lint/suspicious/noArrayIndexKey: ignore
-                key={i}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: i * 0.2 }}
-                viewport={{ once: true }}
-              >
-                <ProjectCard {...proj} />
-              </motion.div>
-            ))}
-          </div>
-        </div>
+        {/* ... (código da seção de portfólio inalterado) ... */}
       </section>
 
       {/* Seção CTA */}
@@ -197,6 +113,7 @@ export default function Page() {
             href="https://wa.me/5511943834648"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={handleConversion} // --- 2. ADICIONADO O ONCLICK ---
             className="cta mt-8 inline-block rounded-full bg-cyan-h px-8 py-3 text-base font-semibold text-dark shadow-lg shadow-cyan-h/50 transition-transform duration-200 hover:scale-105 sm:px-10 sm:py-4 sm:text-lg"
           >
             Peça um Orçamento Grátis
