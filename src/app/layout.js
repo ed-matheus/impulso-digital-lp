@@ -1,5 +1,4 @@
 /** biome-ignore-all lint/complexity/noArguments: ignore */
-import Script from 'next/script';
 import { Montserrat, Poppins } from 'next/font/google';
 import './globals.css';
 
@@ -31,14 +30,14 @@ export default function RootLayout({ children }) {
     <html lang="pt-BR">
       <head>
         {/* Google tag (gtag.js) */}
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-17583189019"></Script>
-        <Script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17583189019"></script>
+        <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments)}
           gtag('js', new Date());
 
           gtag('config', 'AW-17583189019');
-        </Script>
+        </script>
       </head>
       <body className={`${montserrat.variable} ${poppins.variable} antialiased`}>
         <Header/>
