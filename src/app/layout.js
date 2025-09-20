@@ -1,4 +1,5 @@
 /** biome-ignore-all lint/complexity/noArguments: ignore */
+import Script from 'next/script';
 import { Montserrat, Poppins } from 'next/font/google';
 import './globals.css';
 
