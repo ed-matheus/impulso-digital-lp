@@ -53,12 +53,13 @@ const portfolioData = [
 export default function Page() {
   // --- FUNÇÃO DE CONVERSÃO ---
   const handleConversion = () => {
-    if (typeof window !== "undefined" && typeof window.gtag === "function") {
-      window.gtag("event", "conversion", {
-        send_to: "AW-17583189019/uG1TCN2jlp4bEJvYqMBB",
-        value: 1.0,
-        currency: "BRL",
-      });
+    if (typeof window !== "undefined") {
+      // Meta Pixel (evento de contato/lead)
+      if (typeof window.fbq === "function") {
+        window.fbq("track", "Lead");
+      } else {
+        console.warn("fbq não carregado ainda. Evento não enviado.");
+      }
     } else {
       console.warn("gtag não carregado ainda. Evento não enviado.");
     }
@@ -143,7 +144,7 @@ export default function Page() {
           <div className="grid grid-cols-1 justify-items-center gap-10 md:grid-cols-2 lg:grid-cols-3">
             {servicesData.map((item, i) => (
               <motion.div
-                key={i}
+                key={item}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: i * 0.2 }}
@@ -182,7 +183,7 @@ export default function Page() {
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
             {portfolioData.map((proj, i) => (
               <motion.div
-                key={i}
+                key={item}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: i * 0.2 }}
@@ -217,7 +218,8 @@ export default function Page() {
           viewport={{ once: true }}
           className="mt-4 text-lg text-black/80 md:text-xl"
         >
-          Vamos criar um site que valorize sua marca e gere resultados de verdade.
+          Vamos criar um site que valorize sua marca e gere resultados de
+          verdade.
         </motion.p>
 
         <motion.a
