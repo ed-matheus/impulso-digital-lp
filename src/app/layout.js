@@ -1,23 +1,19 @@
-/** biome-ignore-all lint/performance/noImgElement: good */
-"use client";
+"use client"; // 👈 Adicione isso no topo do arquivo
 
 import { useEffect } from "react";
 import { Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
-import Script from "next/script"; // <--- Import obrigatório
+import Script from "next/script";
 
-// Components
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-// Fonte para os títulos
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["500", "700", "900"],
   variable: "--font-montserrat",
 });
 
-// Fonte para o corpo do texto
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "600"],
@@ -52,12 +48,11 @@ export default function RootLayout({ children }) {
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '1295814718950929');
-            fbq('track', 'PageView');
           `}
         </Script>
 
-        {/* Caso o usuário esteja com JavaScript desativado */}
         <noscript>
+          {/** biome-ignore lint/performance/noImgElement: good */}
           <img
             height="1"
             width="1"
