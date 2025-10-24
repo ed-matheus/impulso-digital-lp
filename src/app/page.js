@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import CardComponent from "@/components/CardComponent";
 import ProjectCard from "@/components/ProjectCard";
 import { RxPencil2, RxLightningBolt, RxTarget } from "react-icons/rx";
-import { RiWhatsappLine } from "react-icons/ri";
+import CtaButton from "@/components/CtaButton";
 
 // Dados dos Serviços
 const servicesData = [
@@ -51,20 +51,6 @@ const portfolioData = [
 ];
 
 export default function Page() {
-  // --- FUNÇÃO DE CONVERSÃO ---
-  const handleConversion = () => {
-    if (typeof window !== "undefined") {
-      // Meta Pixel (evento de contato/lead)
-      if (typeof window.fbq === "function") {
-        window.fbq("track", "Lead");
-      } else {
-        console.warn("fbq não carregado ainda. Evento não enviado.");
-      }
-    } else {
-      console.warn("gtag não carregado ainda. Evento não enviado.");
-    }
-  };
-
   return (
     <main className="min-h-screen bg-dark text-light">
       {/* Hero Section */}
@@ -90,20 +76,7 @@ export default function Page() {
           com design moderno, performance e estratégia digital.
         </motion.p>
 
-        <motion.a
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          viewport={{ once: true }}
-          href="https://wa.me/5511943834648"
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={handleConversion}
-          className="cta flex items-center gap-2 mt-6 rounded-full bg-cyan-h px-8 py-3 text-base font-semibold text-dark shadow-lg shadow-cyan-h/50 transition-transform duration-200 hover:scale-105 sm:px-10 sm:py-4 sm:text-lg"
-        >
-          <RiWhatsappLine />
-          Quero um orçamento gratuito
-        </motion.a>
+        <CtaButton text={"Quero um orçamento gratuito"} />
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -222,20 +195,7 @@ export default function Page() {
           verdade.
         </motion.p>
 
-        <motion.a
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          viewport={{ once: true }}
-          href="https://wa.me/5511943834648"
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={handleConversion}
-          className="cta flex items-center justify-center gap-2 mt-6 rounded-full bg-cyan-h px-8 py-3 text-base font-semibold text-dark shadow-lg shadow-cyan-h/50 transition-transform duration-200 hover:scale-105 sm:px-10 sm:py-4 sm:text-lg"
-        >
-          <RiWhatsappLine />
-          Falar com Matheus
-        </motion.a>
+        <CtaButton text={"Falar com Matheus"} />
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}

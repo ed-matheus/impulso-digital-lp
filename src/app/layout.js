@@ -1,9 +1,10 @@
+/** biome-ignore-all lint/security/noDangerouslySetInnerHtml: fixing the error */
 import { Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import MetaPixel from "@/components/MetaPixel";
+import Script from "next/script";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -29,11 +30,26 @@ export default function RootLayout({ children }) {
       <body
         className={`${montserrat.variable} ${poppins.variable} antialiased`}
       >
-        {/* Pixel fica aqui 👇 */}
-        <MetaPixel />
         <Header />
         {children}
         <Footer />
+
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17583189019"
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-17583189019');
+            `,
+          }}
+        />
       </body>
     </html>
   );
