@@ -1,4 +1,7 @@
 /** biome-ignore-all lint/performance/noImgElement: good */
+"use client";
+
+import { useEffect } from "react";
 import { Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
 import Script from "next/script"; // <--- Import obrigatório
@@ -27,6 +30,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  // 🔥 Garante que o evento seja enviado após a montagem do app
+  useEffect(() => {
+    if (typeof window.fbq === "function") {
+      window.fbq("track", "PageView");
+    }
+  }, []);
+
   return (
     <html lang="pt-BR">
       <head>
