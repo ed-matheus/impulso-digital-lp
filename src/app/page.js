@@ -62,7 +62,7 @@ export default function Page() {
           viewport={{ once: true }}
           className="text-3xl font-bold leading-tight md:text-5xl lg:text-6xl"
         >
-          Tenha um Site Profissional que Atrai Clientes Todos os Dias
+          Transforme Seus Cliques em Clientes com uma Landing Page Profissional
         </motion.h2>
 
         <motion.p
@@ -72,8 +72,9 @@ export default function Page() {
           viewport={{ once: true }}
           className="mt-4 max-w-2xl text-lg md:text-xl"
         >
-          Transforme sua presença online em uma máquina de gerar oportunidades —
-          com design moderno, performance e estratégia digital.
+          Desenvolvo a página de vendas ou captura que seu negócio precisa para
+          converter visitantes em leads no WhatsApp. Foco em design moderno e
+          performance.
         </motion.p>
 
         <CtaButton text={"Quero um orçamento gratuito"} />
