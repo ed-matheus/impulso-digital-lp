@@ -10,7 +10,7 @@ import CtaButton from "@/components/CtaButton";
 const servicesData = [
   {
     title: "Design que Vende",
-    text: "Seu site será visualmente atraente, moderno e 100% responsivo, projetado para capturar a atenção e gerar ação em qualquer dispositivo.",
+    text: "Sua página será visualmente atraente, moderna e 100% responsiva, projetada para capturar a atenção e gerar ação em qualquer dispositivo.",
     icon: <RxPencil2 />,
   },
   {
@@ -20,7 +20,7 @@ const servicesData = [
   },
   {
     title: "Foco em Conversão",
-    text: "Cada seção do site é pensada estrategicamente para transformar visitantes em clientes — com botões de ação claros e estrutura persuasiva.",
+    text: "Cada seção é pensada estrategicamente para transformar visitantes em clientes — com botões de ação claros e estrutura persuasiva.",
     icon: <RxTarget />,
   },
 ];
@@ -28,25 +28,25 @@ const servicesData = [
 // Dados do Portfólio
 const portfolioData = [
   {
+    imageUrl: "/img/marmoraria-brilhante-print.png",
+    title: "Landing Page - Marmoraria Brilhante",
+    text: "Página de vendas focada em resultados, com design persuasivo para captação de leads. Gerou 2x mais contatos para a empresa.",
+    altText: "Imagem da landing page Marmoraria Brilhante",
+    link: "http://marmorariabrilhante.com.br/",
+  },
+  {
     imageUrl: "/img/tania-neves.png",
     title: "Loja Virtual Tânia Neves",
-    text: "Se trata de um e-commerce para uma esteticista que precisava de um site para venda de suplementos de parceiros.",
+    text: "Loja virtual com foco em conversão, apresentando produtos de forma clara e profissional para gerar vendas diretas. (Colab. Pixel12Digital)",
     altText: "Imagem do site da Tânia Neves",
     link: "https://tanianeves.com.br/",
   },
   {
     imageUrl: "/img/green-gold.png",
     title: "Loja Virtual Green Gold",
-    text: "E-commerce completo com WooCommerce. Colaboração com Pixel12Digital.",
+    text: "E-commerce com design focado na experiência do usuário e otimizado para o fechamento de pedidos. (Colab. Pixel12Digital)",
     altText: "Imagem da loja virtual Green Gold",
     link: "https://greengoldjoias.com.br/",
-  },
-  {
-    imageUrl: "/img/marmoraria-brilhante-print.png",
-    title: "Landing Page - Marmoraria Brilhante",
-    text: "Página de vendas focada em resultados, com design persuasivo para captação de leads. Gerou 2x mais contatos para a empresa.",
-    altText: "Imagem da landing page Marmoraria Brilhante",
-    link: "http://marmorariabrilhante.com.br/",
   },
 ];
 
@@ -55,7 +55,7 @@ export default function Page() {
     <main className="min-h-screen bg-dark text-light">
       {/* Hero Section */}
       <section className="mx-auto flex max-w-6xl flex-col items-center justify-center gap-5 px-6 py-20 text-center sm:px-8 md:py-32">
-        <motion.h2
+        <motion.h1
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -63,14 +63,14 @@ export default function Page() {
           className="text-3xl font-bold leading-tight md:text-5xl lg:text-6xl"
         >
           Transforme Seus Cliques em Clientes com uma Landing Page Profissional
-        </motion.h2>
+        </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
-          className="mt-4 max-w-2xl text-lg md:text-xl"
+          className="max-w-2xl text-lg md:text-xl"
         >
           Desenvolvo a página de vendas ou captura que seu negócio precisa para
           converter visitantes em leads no WhatsApp. Foco em design moderno e
@@ -103,7 +103,7 @@ export default function Page() {
             viewport={{ once: true }}
             className="text-center text-2xl font-bold tracking-tight md:text-4xl"
           >
-            Por que um Site Profissional é o Passo Que Seu Negócio Precisa Dar
+            Uma Landing Page de Alta Performance é uma Máquina de Vendas
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -112,8 +112,8 @@ export default function Page() {
             viewport={{ once: true }}
             className="mb-12 mt-4 text-center font-medium md:mb-16 md:text-xl"
           >
-            Mais do que um site bonito, você terá uma ferramenta estratégica
-            para aumentar suas vendas e conquistar autoridade.
+            Mais do que uma página bonita, você terá uma ferramenta 100% focada
+            em um único objetivo: <strong>a conversão</strong>.
           </motion.p>
           <div className="grid grid-cols-1 justify-items-center gap-10 md:grid-cols-2 lg:grid-cols-3">
             {servicesData.map((item, i) => (
@@ -151,8 +151,8 @@ export default function Page() {
             viewport={{ once: true }}
             className="mb-12 mt-4 text-center font-medium md:mb-16 md:text-xl"
           >
-            Confira alguns dos projetos que ajudaram empresas a se destacarem no
-            digital.
+            Confira alguns projetos focados em gerar leads e vendas para
+            negócios reais.
           </motion.p>
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
             {portfolioData.map((proj, i) => (
@@ -192,7 +192,7 @@ export default function Page() {
           viewport={{ once: true }}
           className="mt-4 text-lg text-black/80 md:text-xl"
         >
-          Vamos criar um site que valorize sua marca e gere resultados de
+          Vamos criar a Landing Page que valorize sua marca e gere resultados de
           verdade.
         </motion.p>
 
@@ -215,7 +215,7 @@ export default function Page() {
           viewport={{ once: true }}
           className="mt-4 text-lg text-black/80 md:text-xl"
         >
-          Matheus Costa, Web Designer Front-end
+          Matheus Costa, Especialista em LPs e Front-end
         </motion.small>
       </section>
     </main>
