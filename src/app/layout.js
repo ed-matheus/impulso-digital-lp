@@ -19,8 +19,8 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Seu Impulso Digital",
-  description: "Crie um site profissional que gera resultados reais.",
+  title: "Criação de Landing Pages de Alta Conversão | Fale Comigo",
+  description: "Transforme seus cliques em clientes. Desenvolvo Landing Pages profissionais, rápidas e focadas em converter visitantes em leads no WhatsApp.",
 };
 
 export default function RootLayout({ children }) {
